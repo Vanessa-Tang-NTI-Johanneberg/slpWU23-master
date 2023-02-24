@@ -1,0 +1,133 @@
+.container{
+    overflow-x: hidden;
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 2fr 2fr;
+    grid-template-areas: 
+        'hd as'
+        'nav nav'
+        's1 s1'
+        's2 s2'
+        'ft ft';
+
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+    background-color: rgb(195, 131, 131);
+}
+
+aside{
+    grid-area: as;
+    display: flex;
+    background-color: rgb(160, 114, 203);
+
+}
+
+nav{
+    grid-template-columns: nav;
+    display: flex;
+    background-color: rgb(109, 109, 146);
+    width: 150%;
+}
+
+#rosa{
+    grid-area: s1;
+    display: flex;
+    background-color: rgb(211, 107, 124);
+}
+
+#green{
+    grid-area: s2;
+    display: flex;
+    background-color: cadetblue;
+}
+
+footer{
+    grid-area: ft;
+    display: grid;
+    background-color: cornflowerblue;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  
+    .container{
+        height: 100vh;
+        gap: 5px;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        'as hd hd'
+        'nav sn1 art1'
+        'nav sn1 art2'
+        'nav sn1 art3'
+        'nav sn2 sn2'
+        'nav ft ft';
+    }
+
+    
+header{
+    grid-area: hd;
+    display: flex;
+    background-color: rgb(248, 129, 129);
+}
+
+aside{
+    grid-area: as;
+    display: flex;
+    background-color: rgb(160, 114, 203);
+
+}
+
+nav{
+    grid-template-columns:nav;
+    display:flex;
+    background-color: rgb(126, 126, 214);
+    
+    
+}
+
+
+
+#rosa{
+    grid-area: sn1;
+    display: flex;
+    background-color: rgb(236, 82, 166);
+
+    }
+
+#green{
+    grid-area: sn2;
+    display: flex;
+    background-color: cadetblue;
+    }
+
+
+.art1{
+    grid-area: art1;
+    display: flex;
+    background-color: aquamarine;
+
+}
+
+.art2{
+    grid-area: art2;
+    display: flex;
+    background-color: aquamarine;
+
+}
+
+
+.art3{
+    grid-area: art3;
+    display: flex;
+    background-color: aquamarine;
+
+}
+
+}
