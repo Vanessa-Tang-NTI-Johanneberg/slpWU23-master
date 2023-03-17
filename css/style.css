@@ -248,35 +248,32 @@ article {
 }
 
 .mat{
+    display: flex;
     grid-area: me;
     flex-direction: column;
     justify-content: space-between;
-    display: flex;
-
 }
 
-.mat-item {
+.mat-item img {
     width: 100%;
+    
 }
 
 
 #b1 {
     margin:1rem;
-    background-image: url(../img/pizzaa.png) ;
     background-size: cover;
     background-position: center;   
 }
 
 #b2 {
     margin:1rem;
-    background-image: url(../img/pizzaa.png) ;
     background-size: cover;
     background-position: center;   
 }
 
 #b3 {
     margin:1rem;
-    background-image: url(../img/red.png) ;
     background-size: cover;
     background-position: center;   
 }
@@ -300,6 +297,7 @@ article {
 
 footer {
     grid-area: ft;
+    display: flex;
     color: rgb(0, 0, 0)28, 0, 0;
     background-color: aliceblue;
     border:double;
