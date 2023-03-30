@@ -56,113 +56,12 @@ a:hover{
 }
 
 
-/*-------------------------------------------------------------------------------------------
-
-.om_bergsjon{
-    
-    display: grid;
-    height: 100vh;
-    gap: 5px;
-    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    'hd hd'
-    'ar ar'
-    'b1 b1'
-    't1 t1'
-    'b2 b2'
-    't2 t2'
-    'b3 b3'
-    't3 t3'
-    'ft ft'
-
-
-
-}
-
-header{
-    grid-area: hd;
-    color: rgb(252, 255, 252);
-    margin: 0;
-    background-image: url(../img/teleskop.jpg);
-    background-size: cover;
-    background-position: center; 
-    
-}
-
-.titel{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    
-}
-
-article {
-    margin:0;
-    grid-area: ar;
-    color: rgb(15, 5, 5);
-    text-align: center;
-}
-
-#b1 {
-    grid-area: b1;
-    margin:1rem;
-    background-image: url(../img/pizzaa.png) ;
-    background-size: cover;
-    background-position: center;   
-}
-
-#b2 {
-    grid-area: b2;
-    margin:1rem;
-    background-image: url(../img/pizzaa.png) ;
-    background-size: cover;
-    background-position: center;   
-}
-
-#b3 {
-    grid-area: b3;
-    margin:1rem;
-    background-image: url(../img/red.png) ;
-    background-size: cover;
-    background-position: center;   
-}
-
-
-#t1 {
-    grid-area: t1;
-    margin: 1rem;
-    font-size: 1rem;
-    color:black;
-}
-
-#t2 {
-    grid-area: t2;
-    margin:1rem;
-    color:purple;
-}
-
-#t3 {
-    grid-area: t3;
-    margin:1rem;
-    color:pink;
-}
-
-footer {
-    grid-area: ft;
-    color: rgb(0, 0, 0)28, 0, 0;
-    background-color: aliceblue;
-    border:double;
-
-
-}
-
-
 
 /* ---------------------------------------------------*/
 .menu{
     height: 100vh;
     width: 50vw;
-    background: rgb(253, 192, 222);
+    background: rgb(233, 225, 229);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -171,6 +70,10 @@ footer {
     z-index: 10;
 }
 
+menu a {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
 .menu-button{
@@ -182,12 +85,12 @@ footer {
 
 .menu-button i.material-icons{
     font-size: 2.5rem;
+    
 }
 
 .show{
     left: 0;
 }
-
 
 
 .fade-layer{
@@ -204,11 +107,47 @@ footer {
 .fade-layer.visible{
     display: block;
 }
+/*--------------------------------------------------------------*/
+.om_bergsjon{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    'hd hd'
+    'fa ka'
+    'fa ka'
+    'ft ft'
+}
 
+header{
+    grid-area: hd;
+    
+}
+
+#fakta{
+    grid-area: fa;
+    color: rgb(8, 9, 8);
+}
+
+#karta{
+    grid-area: ka;
+    background-size: cover;    
+}
+
+iframe{
+    width: 150%;
+    height: 250px;
+
+}
+
+footer{
+    grid-area: ft;
+
+}
 /*--------------------------------------------------------------*/
 
-.om_bergsjon{
-    
+.mat_bergsjon{
     display: grid;
     height: 100vh;
     gap: 5px;
@@ -219,8 +158,6 @@ footer {
     'ar ar'
     'me me'
     'ft ft'
-
-
 
 }
 
@@ -238,62 +175,56 @@ header{
     text-align: center;
     color: rgb(255, 255, 255);
     
+    
 }
 
 article {
-    margin:0;
     grid-area: ar;
     color: rgb(15, 5, 5);
-    text-align: center;
+    padding: 5px;
 }
 
 .mat{
     display: flex;
     grid-area: me;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.mat-item img {
-    width: 100%;
+.mat-item1 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+
+}
+
+.mat-item2 p{ 
+    color: black;
+
+}
+
+.mat-item3 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
     
 }
 
-
-#b1 {
-    margin:1rem;
-    background-size: cover;
-    background-position: center;   
+.mat-item4 {
+    font-family: monospace;
 }
 
-#b2 {
-    margin:1rem;
-    background-size: cover;
-    background-position: center;   
-}
-
-#b3 {
-    margin:1rem;
-    background-size: cover;
-    background-position: center;   
+.mat-item5  {
+    font-style: cursive;
 }
 
 
-#t1 {
-    margin: 1rem;
-    font-size: 1rem;
-    color:black;
+.mat-item5 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+    
 }
 
-#t2 {
-    margin:1rem;
-    color:purple;
-}
-
-#t3 {
-    margin:1rem;
-    color:pink;
-}
 
 footer {
     grid-area: ft;
