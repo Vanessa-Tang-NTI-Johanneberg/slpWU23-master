@@ -49,74 +49,109 @@ a:hover{
 /* Anpassad för datorskärm, sålänge sidan är större än 400px kommer det här att visas */
 
 @media screen and (min-width: 400px) {
+    .menu-button{
+        display:none
+    }
 
 #sn2{
     font-size: 2rem;}
 
 }
 
+@media screen and (max-width: 400px) {
+
+    .menu{
+        height: 100vh;
+        width: 50vw;
+        background: rgb(233, 225, 229);
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+    }
+    
+    menu,li a {
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    li {
+        margin: 10px;
+    }
+    
+    .menu-button{
+        cursor: pointer;
+        display: inline;
+        position: left;
+        left: 10px;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+        
+    }
+    
+    .show{
+        left: 0;
+    }
+    
+    
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible{
+        display: block;
+    }
+    
+    
+    .om_bergsjon{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 10fr 8fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: 
+        'hd hd'
+        'na na' /*kolla här igen*/
+        'fa ka'
+        'fa ka'
+        'gn gn'
+        'ft ft'
+    }
+    
+    .nav{
+        grid-area: na;
+
+    }
+
+
+
+    
+    }
+
 
 
 /* ---------------------------------------------------*/
-.menu{
-    height: 100vh;
-    width: 50vw;
-    background: rgb(233, 225, 229);
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
-}
-
-menu a {
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-.menu-button{
-    cursor: pointer;
-    display: inline;
-    position: left;
-    left: 10px;
-}
-
-.menu-button i.material-icons{
-    font-size: 2.5rem;
-    
-}
-
-.show{
-    left: 0;
-}
-
-
-.fade-layer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 5;
-}
-
-.fade-layer.visible{
-    display: block;
-}
 /*--------------------------------------------------------------*/
 .om_bergsjon{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 10fr 8fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
     'hd hd'
     'fa ka'
     'fa ka'
+    'gn gn'
     'ft ft'
 }
 
@@ -128,23 +163,35 @@ header{
 #fakta{
     grid-area: fa;
     color: rgb(8, 9, 8);
+    padding: 10px;
 }
 
 #karta{
     grid-area: ka;
-    background-size: cover;    
+    padding: 10px; 
 }
 
 iframe{
-    width: 150%;
-    height: 250px;
+    width: 100%;
+    height: 300px;
+    
 
+}
+
+.gatunamn{
+    grid-area: gn;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 footer{
     grid-area: ft;
 
 }
+
+
+
+
 /*--------------------------------------------------------------*/
 
 .mat_bergsjon{
