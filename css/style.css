@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-color: rgba(124, 124, 124, 0.121);
+
 }
 
 .container {
@@ -46,6 +48,279 @@ a:hover {
     background-color: rgb(227, 227, 227);
 }
 
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .om_bergsjon {
+        display: grid;
+        height: 100vh;
+        background-color: rgba(124, 124, 124, 0.121);
+        grid-template-columns: 10fr 8fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas:
+            'hd hd'
+            'fa ka'
+            'fa ka'
+            'gn gn'
+            'ft ft'
+    }
+
+
+    #sn2 {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+.menu {
+    height: 100vh;
+    width: 50vw;
+    background: rgb(233, 225, 229);
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+
+menu,
+li a {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    margin: 10px;
+}
+
+.menu-button {
+    cursor: pointer;
+    display: inline;
+    left: 10px;
+}
+
+.menu-button i.material-icons {
+    font-size: 2.5rem;
+
+}
+
+.show {
+    left: 0;
+}
+
+
+.fade-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible {
+    display: block;
+}
+
+/* Om Bergsjön */
+/*--------------------------------------------------------------*/
+.om_bergsjon {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10fr 8fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+        'hd hd'
+        'fa ka'
+        'fa ka'
+        'gn gn'
+        'gn gn'
+        'ft ft'
+}
+
+header {
+    grid-area: hd;
+
+}
+
+#fakta {
+    grid-area: fa;
+    color: rgb(8, 9, 8);
+    padding: 10px;
+}
+
+#karta {
+    grid-area: ka;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+
+
+}
+
+.gatunamn {
+    grid-area: gn;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+footer {
+    grid-area: ft;
+
+}
+
+
+
+
+/*--------------------------------------------------------------*/
+
+.mat_bergsjon {
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'hd hd'
+        'ar ar'
+        'me me'
+        'ft ft'
+
+}
+
+header {
+    grid-area: hd;
+    color: rgb(252, 255, 252);
+    margin: 0;
+    background-image: url(../img/teleskop_liten.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titel {
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+}
+
+article {
+    grid-area: ar;
+    color: rgb(15, 5, 5);
+    padding: 8px;
+}
+
+.mat {
+    display: flex;
+    grid-area: me;
+    flex-direction: column;
+}
+
+
+.mat-item1 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+
+}
+
+.mat-item2 p {
+    padding: 10px;
+    font-family: monospace;
+
+
+}
+
+.mat-item3 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+
+}
+
+.mat-item4 {
+    font-family: monospace;
+    padding: 10px;
+}
+
+
+.mat-item6 {
+    padding: 10px;
+    font-family: monospace;
+
+}
+
+
+.mat-item5 img {
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+
+}
+
+
+footer {
+    grid-area: ft;
+    display: flex;
+    border: double;
+    background-color: rgba(124, 124, 124, 0.121);
+
+}
+
+/*-------------------------------------------------------------------------------*/
+.aktivitet {
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'hd'
+        'td'
+        'ft'
+
+}
+
+h1 {
+    padding: 10px;
+}
+
+.todo {
+    grid-area: td;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+article {
+    grid-area: ar;
+    color: rgb(15, 5, 5);
+    padding: 8px;
+}
+
+.footer{
+    grid-area: ft;
+}
 
 /* Anpassad för datorskärm, sålänge sidan är större än 400px kommer det här att hända*/
 
@@ -111,274 +386,6 @@ a:hover {
         margin-top: 100px;
     }
 
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 450px) {
-
-    .topbar {
-        display: none;
-    }
-
-    .om_bergsjon {
-        display: grid;
-        height: 100vh;
-        background-color: rgba(124, 124, 124, 0.121);
-        grid-template-columns: 10fr 8fr;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
-        grid-template-areas:
-            'hd hd'
-            'fa ka'
-            'fa ka'
-            'gn gn'
-            'ft ft'
-    }
-
-
-    #sn2 {
-        font-size: 1rem;
-    }
-
-    a {
-        font-size: 1.5rem;
-    }
-}
-
-.menu {
-    height: 100vh;
-    width: 50vw;
-    background: rgb(233, 225, 229);
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-    z-index: 10;
-}
-
-menu,
-li a {
-    color: black;
-    font-size: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-li {
-    margin: 10px;
-}
-
-.menu-button {
-    cursor: pointer;
-    display: inline;
-    position: left;
-    left: 10px;
-}
-
-.menu-button i.material-icons {
-    font-size: 2.5rem;
+   
 
 }
-
-.show {
-    left: 0;
-}
-
-
-.fade-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 5;
-}
-
-.fade-layer.visible {
-    display: block;
-}
-
-/* Om Bergsjön */
-/*--------------------------------------------------------------*/
-.om_bergsjon {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 10fr 8fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-areas:
-        'hd hd'
-        'fa ka'
-        'fa ka'
-        'gn gn'
-        'ft ft'
-}
-
-header {
-    grid-area: hd;
-
-}
-
-#fakta {
-    grid-area: fa;
-    color: rgb(8, 9, 8);
-    padding: 10px;
-}
-
-#karta {
-    grid-area: ka;
-    padding: 10px;
-}
-
-iframe {
-    width: 100%;
-    height: 300px;
-
-
-}
-
-.gatunamn {
-    grid-area: gn;
-    padding: 10px;
-    margin-top: 100px;
-}
-
-footer {
-    grid-area: ft;
-
-}
-
-
-
-
-/*--------------------------------------------------------------*/
-
-.mat_bergsjon {
-    display: grid;
-    height: 100vh;
-    gap: 5px;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        'hd hd'
-        'ar ar'
-        'me me'
-        'ft ft'
-
-}
-
-header {
-    grid-area: hd;
-    color: rgb(252, 255, 252);
-    margin: 0;
-    background-image: url(../img/teleskop.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.titel {
-    text-align: center;
-    color: rgb(255, 255, 255);
-
-
-}
-
-article {
-    grid-area: ar;
-    color: rgb(15, 5, 5);
-    padding: 8px;
-}
-
-.mat {
-    display: flex;
-    grid-area: me;
-    flex-direction: column;
-}
-
-.mat-item1 img {
-    width: 380px;
-    height: 280px;
-    padding: 10px;
-
-}
-
-.mat-item2 p {
-    color: rgb(255, 99, 99);
-    padding: 8px;
-
-}
-
-.mat-item3 img {
-    width: 380px;
-    height: 280px;
-    padding: 8px;
-
-}
-
-.mat-item4 {
-    font-family: monospace;
-    padding: 8px;
-}
-
-.mat-item5 {
-    font-style: cursive;
-    padding: 8px;
-}
-
-
-.mat-item5 img {
-    width: 380px;
-    height: 280px;
-    padding: 8px;
-
-}
-
-
-footer {
-    grid-area: ft;
-    display: flex;
-    color: rgb(0, 0, 0)28, 0, 0;
-    background-color: aliceblue;
-    border: double;
-
-
-}
-
-/*-------------------------------------------------------------------------------*/
-.aktivitet {
-    display: grid;
-    height: 100vh;
-    gap: 5px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        'hd'
-        'td'
-        'ft'
-
-}
-
-h1{
-    padding: 10px;
-}
-
-.todo{
-    grid-area:td;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-
-article {
-    grid-area: ar;
-    color: rgb(15, 5, 5);
-    padding: 8px;
-}
-
