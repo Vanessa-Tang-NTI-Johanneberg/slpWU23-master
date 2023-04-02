@@ -81,6 +81,7 @@ a:hover {
     a {
         font-size: 1.5rem;
     }
+
 }
 
 .menu {
@@ -286,42 +287,6 @@ footer {
 
 }
 
-/*-------------------------------------------------------------------------------*/
-.aktivitet {
-    display: grid;
-    height: 100vh;
-    gap: 5px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        'hd'
-        'td'
-        'ft'
-
-}
-
-h1 {
-    padding: 10px;
-}
-
-.todo {
-    grid-area: td;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-
-article {
-    grid-area: ar;
-    color: rgb(15, 5, 5);
-    padding: 8px;
-}
-
-.footer{
-    grid-area: ft;
-}
-
 /* Anpassad för datorskärm, sålänge sidan är större än 400px kommer det här att hända*/
 
 @media screen and (min-width: 450px) {
@@ -385,7 +350,6 @@ article {
         padding: 10px;
         margin-top: 100px;
     }
-
-   
+    
 
 }
