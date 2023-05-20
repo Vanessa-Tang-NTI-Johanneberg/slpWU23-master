@@ -189,7 +189,9 @@ footer {
 }
 
 
-
+.gatunamn h2{
+    font-size: medium;
+}
 
 /*--------------------------------------------------------------*/
 
@@ -234,6 +236,8 @@ article {
     display: flex;
     grid-area: me;
     flex-direction: column;
+    align-items: center;
+    padding:1px;
 }
 
 
@@ -246,38 +250,11 @@ article {
 
 .mat-item2 p {
     padding: 10px;
+    margin:3px;
     font-family: monospace;
 
 
 }
-
-.mat-item3 img {
-    width: 380px;
-    height: 280px;
-    padding: 10px;
-
-}
-
-.mat-item4 {
-    font-family: monospace;
-    padding: 10px;
-}
-
-
-.mat-item6 {
-    padding: 10px;
-    font-family: monospace;
-
-}
-
-
-.mat-item5 img {
-    width: 380px;
-    height: 280px;
-    padding: 10px;
-
-}
-
 
 footer {
     grid-area: ft;
@@ -287,9 +264,9 @@ footer {
 
 }
 
-/* Anpassad för datorskärm, sålänge sidan är större än 400px kommer det här att hända*/
+/* Anpassad för datorskärm, sålänge sidan är större än 450px kommer det här att hända*/
 
-@media screen and (min-width: 450px) {
+@media(min-width: 450px) {
     .menu-button {
         display: none
     }
@@ -351,5 +328,14 @@ footer {
         margin-top: 100px;
     }
     
+    .mat {
+        display: flex;
+        grid-area: me;
+        flex-direction: row;
+        flex-wrap: wrap;
 
+    }
+
+    
+    
 }
