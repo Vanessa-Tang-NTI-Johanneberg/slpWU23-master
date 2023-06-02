@@ -4,6 +4,8 @@ body {
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:wght@300&family=Montserrat&family=Source+Sans+Pro:wght@300&display=swap');
+
 
 .container {
     display: grid;
@@ -21,7 +23,6 @@ body {
 #sn1 {
     grid-area: s1;
     margin: 2rem;
-    /* background-color: rgb(227, 227, 227); */
     display: flex;
     background-image: url(../img/teleskop_liten.jpg);
     background-size: cover;
@@ -109,6 +110,14 @@ a:hover {
     
 }
 
+.om_bergsjon, title{
+    font-family: cherry bomb one;
+}
+
+.om_bergsjon, topbar{
+    font-family: Source Sans Pro;
+}
+
 .menu {
     height: 100vh;
     width: 50vw;
@@ -188,6 +197,12 @@ header {
     grid-area: fa;
     color: rgb(8, 9, 8);
     padding: 10px;
+    font-family: Source Sans Pro;
+}
+
+#fakta h1{
+    font-family: cherry bomb one;
+ 
 }
 
 #karta {
@@ -202,10 +217,16 @@ iframe {
 
 }
 
-.gatunamn {
+.gatunamn{
     grid-area: gn;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 80px;
+    font-family: Source Sans Pro;
+
+}
+.gatunamn, ul, li{
+    font-family: Source Sans Pro
+
 }
 
 footer {
