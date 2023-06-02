@@ -4,6 +4,7 @@ body {
 
 }
 
+
 .container {
     display: grid;
     height: 100vh;
@@ -16,9 +17,19 @@ body {
 }
 
 
+
 #sn1 {
     grid-area: s1;
-    background-color: rgb(227, 227, 227);
+    margin: 2rem;
+    /* background-color: rgb(227, 227, 227); */
+    display: flex;
+    background-image: url(../img/teleskop_liten.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5rem;
+    color: white;
 
 }
 
@@ -82,6 +93,20 @@ a:hover {
         font-size: 1.5rem;
     }
 
+    #s2 {
+        grid-area: ss;
+        margin: 1rem;
+        display: flex;
+        background-image: url(../img/siriuss.jpg);
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items:center;
+        font-size: 1.5rem;
+        color: white;
+    
+    }
+    
 }
 
 .menu {
@@ -213,9 +238,10 @@ header {
     grid-area: hd;
     color: rgb(252, 255, 252);
     margin: 0;
-    background-image: url(../img/teleskop_liten.jpg);
+    background-image: url(../img/teleskop_liten.jpg);    
     background-size: cover;
     background-position: center;
+    align-items: center;
 
 }
 
